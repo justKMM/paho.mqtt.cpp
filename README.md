@@ -63,7 +63,7 @@ The first new release in a while! It's primarily a bug-fix release, but has a fe
 - [#313](https://github.com/eclipse/paho.mqtt.cpp/issues/313) Get unit tests building on Windows. Needed to get rid of make_unique<> for Windows
 - [#397](https://github.com/eclipse/paho.mqtt.cpp/issues/397) Doc about clean session in connect_options.h is wrong
 - [#442](https://github.com/eclipse/paho.mqtt.cpp/issues/442) g++ complains with multiple definition of static constexpr for mixed C++11/17 builds
-- [#445](https://github.com/eclipse/paho.mqtt.cpp/pull/445)Fix copy/move constructor for connect/disconnect opts with properties
+- [#445](https://github.com/eclipse/paho.mqtt.cpp/pull/445) Fix copy/move constructor for connect/disconnect opts with properties
 - [#425](https://github.com/eclipse/paho.mqtt.cpp/pull/425) Silence warning for unused variable rsp in class `unsubscribe_response`
 - [#440](https://github.com/eclipse/paho.mqtt.cpp/pull/440) Fix typos across the project
 - [#428](https://github.com/eclipse/paho.mqtt.cpp/issues/428) Fixed type in create_options.h
@@ -223,7 +223,7 @@ On Windows systems CMake creates Visual Studio project files for use with MSVC. 
 
 #### Using Paho C++ as a Windows DLL
 
-The project can be built as a static library or shared DLL on Windows. If using it as a DLL in your application, yuo should define the macro `PAHO_MQTTPP_IMPORTS` before including any Paho C++ include files. Preferably, make it a global definition in the application's build file, like in CMake:
+The project can be built as a static library or shared DLL on Windows. If using it as a DLL in your application, you should define the macro `PAHO_MQTTPP_IMPORTS` before including any Paho C++ include files. Preferably, make it a global definition in the application's build file, like in CMake:
 
     target_compile_definitions(myapp PUBLIC PAHO_MQTTPP_IMPORTS)
 
